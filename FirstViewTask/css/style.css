@@ -238,7 +238,16 @@ textarea.form-control:focus{
 	transition:all .3s ease;
 }
 input.form-control#select_date{
-	background:url(../img/calendar.svg) right center no-repeat transparent;
+	background:url(../img/icons8-today-26.png) right center no-repeat transparent;
+}
+input.form-control#email{
+	background:url(../img/icons8-new-post-26.png) right center no-repeat transparent;
+}
+input.form-control#name{
+	background:url(../img/icons8-administrator-male-26.png) right center no-repeat transparent;
+}
+input.form-control#js-pass{
+	background:url(../img/icons8-lock-26.png) right center no-repeat transparent;
 }
 .check_boxe{margin-top:10px}
 .check_boxe label{
