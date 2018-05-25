@@ -6,7 +6,7 @@
     $subject = 'Muzi FirstView Task';
 	$headers = "MIME-Version: 1.0" . "\r\n";
 	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-	$headers .= "From:noreply@yourdomain.com"."\r\n"; // This is the email address the generated message will be from. I recommend using something like noreply@yourdomain.com.
+	$headers .= "From:noreply@yourdomain.com"."\r\n";
 	$headers .= "Reply-To:".$email;	
     $body ="<p style='font-family:Arial, Helvetica, sans-serif; font-size:12px;'>Name: ".$name."<br/>Email:  ".$email."<br/>Date: ".$date."<br/>Password: ".$password."</p>
 			<p style='font-family:Arial, Helvetica, sans-serif; font-size:12px;'>---<br/>Kind Regards <br/><strong>FirstView Task</strong></p>";
