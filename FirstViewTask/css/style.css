@@ -1,0 +1,292 @@
+h1,h2,h3,h4,h5,h6,html *{
+	-webkit-font-smoothing:antialiased;
+}
+#left_form{
+	text-align:center;
+}
+html *{-moz-osx-font-smoothing:grayscale}
+body{
+	background:url(../img/parallax-bg-11.jpg) right center no-repeat #fff;
+	font-size:16px;
+	line-height:1.5;
+	font-family:"Roboto Condensed",Arial,sans-serif;
+	color:#555;
+}
+h1,h2,h3,h4,h5,h6{
+	color:#222;
+	font-weight:700;
+}
+#left_form,header{
+	position:relative;
+}
+#form_container{
+	width:1000px;
+	height:100vh;
+	margin-left:auto;
+	margin-right:auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#left_form{
+	background-color:rgba(0, 0, 0, 0.8);
+	min-height:450px;
+	color:#fff;
+	padding:70px 50px 30px;
+	box-sizing:border-box;
+}
+#left_form h2{
+	font-weight:300;
+	color:#fff;
+	padding:10px;
+	font-size:36px;
+}
+#left_form p{
+	font-size:16px; 
+	padding:20px;
+}
+
+@media only screen and (max-width:760px) {
+   #left_form{
+	   margin:390px auto 0px; 
+	   padding:70px 50px 30px 30px; 
+	   text-align:center;
+	}
+	#left_form figure{text-align:center;}
+	#left_form h2{
+		text-align:center;
+		padding:0px;
+	}
+	#left_form p{text-align:center;}
+}
+#wizard_container{
+	position:relative;
+	min-height:450px; 
+	background-color:#fff;
+}
+h3.main_question{
+	margin:0 0 20px;
+	padding:0;
+	font-weight:400;
+	font-size:26px;
+}
+h3.main_question strong{
+	display:block;
+	color:#999;
+	font-size:18px;
+	margin-bottom:5px;
+	font-weight:400;
+}
+button.submit{
+	border:none;
+	color:#fff;
+	text-decoration:none;
+	transition:background .5s ease;
+	-moz-transition:background .5s ease;
+	-webkit-transition:background .5s ease;
+	-o-transition:background .5s ease;
+	display:inline-block;cursor:pointer;
+	font-weight:400;
+	outline:0;
+	text-align:center;
+	background:#409fff;
+	position:relative;
+	font-size:15px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	line-height:1;
+	padding:10px 30px;
+}
+
+button.submit:before{
+	top:8px;
+	font-size:18px;
+	position:absolute;
+	font-family:ElegantIcons;
+}
+button.submit{padding:10px 30px 10px 20px;}
+button[disabled]{display:none}
+button.submit:before{
+	content:"\4e";
+	right:10px;
+}
+.submit:hover{
+	background:#0073e5;
+	color:#fff;
+}
+#middle-wizard{padding:45px 45px 30px 15px}
+span.error{
+	font-size:12px;
+	position:absolute;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	top:-20px;
+	right:-15px;
+	z-index:2;
+	height:25px;
+	line-height:1;
+	background-color:#e34f4f;
+	color:#fff;
+	font-weight:400;
+	display:inline-block;
+	padding:6px 8px;
+}
+span.error:after{
+	content:'';
+	position:absolute;
+	border-style:solid;
+	border-width:0 6px 6px 0;
+	border-color:transparent #e34f4f;
+	display:block;
+	width:0;
+	z-index:1;
+	bottom:-6px;
+	left:20%;
+}
+.form-group{position:relative}
+.form-group i{
+	font-size:20px;
+	position:absolute;
+	right:0;
+	top:10px;
+	color:#ccc;
+}
+.form-group label{font-weight:400;color:#222}
+.form-group.checkbox_questions label,
+.form-group.radio_questions label{color:#555;font-weight:400;cursor:pointer}
+.form-group.radio_questions label{
+	border:2px solid #e8ebed;
+	display:block;
+	padding:15px 45px 15px 15px;
+	box-sizing:content-box;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	background-color:#fff;
+}
+.form-group.radio_questions .iradio_square-yellow{
+	position:absolute;
+	top:17px;
+	right:15px;
+}
+.form-group.checkbox_questions .icheckbox_square-yellow{margin-right:10px}
+.form-group.radio_questions label:hover{border:2px solid #fc3}
+.form-group.select{margin-bottom:30px}
+.styled-select select{
+	background:0 0;
+	width:107%;
+	padding:5px;
+	border:0;
+	border-radius:0;
+	box-shadow:none;
+	height:41px;
+	color:#999;
+	margin:0;
+	line-height:1;
+	font-weight:400;
+	-moz-appearance:window;
+	-webkit-appearance:none;
+	cursor:pointer;
+	outline:0;
+}
+.styled-select select:focus{
+	color:#555;
+	outline:0;
+	box-shadow:none;
+}
+.styled-select{
+	width:100%;
+	overflow:hidden;
+	height:44px;
+	box-sizing:border-box;
+	line-height:1px!important;
+	background:url(../img/arrow_down.svg) right center no-repeat #fff;
+	border:0;border-bottom:2px solid #e8ebed;
+	border-radius:0;
+}
+.styled-select select::-ms-expand{display:none}
+.form-control::-moz-placeholder{color:#999;opacity:1}
+.form-control::-webkit-input-placeholder{color:#999}
+input.form-control,select.form-control,textarea.form-control{
+	background:transparent;
+	border:none;
+	border-bottom:2px solid #e8ebed;
+	border-radius:0;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	-webkit-transition:none;
+	color:#999;
+	height:44px;
+	font-size:16px;
+	font-weight:400;
+	margin-bottom:25px;
+	padding:6px 12px 6px 0;
+}
+input.form-control:focus,select.form-control:focus,
+textarea.form-control:focus{
+	background-color:transparent;
+	border-color:#777;
+	outline:0;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	color:#555;
+	-webkit-transition:all .3s ease;
+	transition:all .3s ease;
+}
+input.form-control#select_date{
+	background:url(../img/calendar.svg) right center no-repeat transparent;
+}
+.check_boxe{margin-top:10px}
+.check_boxe label{
+	padding-left:0;
+	margin-right:15px;
+	color:#999;
+}
+
+	.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: #409fff;
+    opacity: 0.7;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: #409fff;
+    left: 20px;
+}
